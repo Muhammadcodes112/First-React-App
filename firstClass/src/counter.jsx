@@ -7,8 +7,10 @@ function Counter(){
         <div>
             <h1>Counter Component</h1>
 
-            <button>Increase by 1 </button>
+            <button onClick={()=> setNum(num + 1)}>Increase by 1 </button>
             <p>{num}</p>
+
+            <button onClick={() => setNum(num - 2)}>Decrease by 1</button>
         </div>
     )
 }
